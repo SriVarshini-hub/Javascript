@@ -1,8 +1,8 @@
-// let age = prompt("Enter your age:");
-// age = Number(age);
-// if (age != null && age >= 18) {
-//   console.log("you are eligible for vote");
-// }
+let age = prompt("Enter your age:");
+age = Number(age);
+if (age != null && age >= 18) {
+  console.log("you are eligible for vote");
+}
 
 // let age = prompt("Enter your age:");
 // age = Number(age); // Convert input to a number
