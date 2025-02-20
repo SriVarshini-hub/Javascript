@@ -32,3 +32,42 @@
 // }
 // console.log(nums);
 // console.table(nums);
+// let names = ["sri", "rosh", "kausi", "renu", "sampath"]; //for of loop
+
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+// }
+
+// console.log("For of loop:");
+// for (let name of names) {
+//   console.log(name);
+// }
+
+// let user = {           //for in loop
+//   name: "Sri",
+//   age: 21,
+//   city: "Tanjore",
+//   contact: "9876543210",
+// };
+// for (let prop in user) {
+//   console.log(prop + ":" + user[prop]);
+// }
+
+// looping over objects by converting to an array:
+let user = {
+  //for in loop
+  name: "Sri",
+  age: 21,
+  city: "Tanjore",
+  contact: "9876543210",
+};
+
+let arr_keys = Object.keys(user);
+console.table(arr_keys);
+
+let arr_values = Object.values(user);
+console.table(arr_values);
+
+for (let i = 0; i < arr_keys.length; i++) {
+  console.log(arr_keys[i] + ":" + arr_values[i]);
+}
