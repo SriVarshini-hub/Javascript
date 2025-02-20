@@ -71,3 +71,10 @@ console.table(arr_values);
 for (let i = 0; i < arr_keys.length; i++) {
   console.log(arr_keys[i] + ":" + arr_values[i]);
 }
+
+//exercise to doubleup the given number:
+i = [1, 2, 3, 4, 5];
+for (let j = 0; j < i.length; j++) {
+  i[j] = i[j] * 2;
+}
+console.log(i);
