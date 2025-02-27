@@ -53,17 +53,40 @@
 // let total = numbers.reduce((sum, number) => sum + number, 0);
 // console.log(total);
 
-//using arrow function to create a closure:
-let createCounter = () => {
-  let count = 0;
-  return () => {
-    count++;
-    return count;
-  };
-};
+// //using arrow function to create a closure:
+// let createCounter = () => {
+//   let count = 0;
+//   return () => {
+//     count++;
+//     return count;
+//   };
+// };
 
-let counter = createCounter();
-console.log(counter);
-console.log(counter());
-console.log(counter());
-console.log(counter());
+// let counter = createCounter();
+// console.log(counter);
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+//Callback Function:
+function myCallback() {
+  console.log("i am a callback function");
+}
+function test(fun) {
+  fun();
+}
+test(myCallback);
+
+// //setTimeout(function, 1000):
+// setTimeout(function () {
+//   console.log("Hello world Joes");
+// }, 3000);
+
+// setInterval(function () {
+//   console.log("Hello world Joes");
+// }, 3000);
+
+const numbers = [1, 2, 3];
+numbers.forEach(function (number) {
+  console.log(number);
+});
