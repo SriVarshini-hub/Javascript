@@ -19,16 +19,26 @@ const number = [1, 2, 3, 4, 5];
 // });
 
 // //Examples:
-// // to print each element of an array:
+// //1. to print each element of an array:
 // const fruits = ["apple", "bannana", "cherry", "orange"];
 // fruits.forEach((fruit) => {
 //   console.log(fruit);
 // });
 
-//to sum all elements of an array:
-const numebrs = [1, 2, 3, 4, 5];
-let total = 0;
-numebrs.forEach((number) => {
-  total += number;
-});
-console.log(total);
+// //2. to sum all elements of an array:
+// const numebrs = [1, 2, 3, 4, 5];
+// let total = 0;
+// numebrs.forEach((number) => {
+//   total += number;
+// });
+// console.log(total);
+
+// //3. to create a new array from existing one:
+// const numebrs = [1, 2, 3, 4, 5];
+// const doubledNumbers = [];
+// numebrs.forEach((number) => {
+//   doubledNumbers.push(number * 2);
+// });
+// console.log(doubledNumbers);
+
+4. to find the max element of an array:
