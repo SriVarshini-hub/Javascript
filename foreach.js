@@ -26,19 +26,48 @@ const number = [1, 2, 3, 4, 5];
 // });
 
 // //2. to sum all elements of an array:
-// const numebrs = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 // let total = 0;
-// numebrs.forEach((number) => {
+// numbers.forEach((number) => {
 //   total += number;
 // });
 // console.log(total);
 
 // //3. to create a new array from existing one:
-// const numebrs = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 // const doubledNumbers = [];
 // numebrs.forEach((number) => {
 //   doubledNumbers.push(number * 2);
 // });
 // console.log(doubledNumbers);
 
-4. to find the max element of an array:
+// // 4. to find the max element of an array:
+// const numbers = [1, 2, 3, 4, 5];
+// let max = numbers[0];
+// numbers.forEach((number) => {
+//   if (number > max) {
+//     max = number;
+//   }
+// });
+// console.log(max);
+
+// //5. to calculate the average of an array:
+// const numbers = [1, 2, 3, 4, 5];
+// total = 0;
+// numbers.forEach((number) => {
+//   total += number;
+// });
+// console.log(total / number.length);
+
+//6. to filter an array using for each:
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evenNumbers = [];
+
+numbers.forEach((number) => {
+  if (number % 2 === 0) {
+    evenNumbers.push(number);
+  }
+});
+console.log(evenNumbers);
+
+//7. update elementv of an array:
