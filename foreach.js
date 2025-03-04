@@ -59,15 +59,22 @@ const number = [1, 2, 3, 4, 5];
 // });
 // console.log(total / number.length);
 
-//6. to filter an array using for each:
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const evenNumbers = [];
+// //6. to filter an array using for each:
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evenNumbers = [];
 
-numbers.forEach((number) => {
-  if (number % 2 === 0) {
-    evenNumbers.push(number);
-  }
-});
-console.log(evenNumbers);
+// numbers.forEach((number) => {
+//   if (number % 2 === 0) {
+//     evenNumbers.push(number);
+//   }
+// });
+// console.log(evenNumbers);
 
 //7. update elementv of an array:
+const names = ["sri", "moni", "santhosh", "kausi", "anju"];
+
+names.forEach((name, index) => {
+  names[index] = name.toUpperCase();
+  console.log(name, index);
+});
+console.log(names);
