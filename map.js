@@ -46,4 +46,39 @@
 // const evenNumbers = numbers.map((num) => num % 2 === 0);
 // console.log(evenNumbers);
 
-// 5. Extracting properties from an array of objects:
+// // 5. Extracting properties from an array of objects:
+// const users = [
+//   { name: "sri", age: 21 },
+//   { name: "moni", age: 21 },
+//   { name: "kausi", age: 21 },
+// ];
+// const names = users.map((user) => {
+//   return user.name;
+// });
+// console.log(names);
+
+// // 6. modifying an array of objects:
+// const users = [
+//   { name: "sri", age: 21 },
+//   { name: "moni", age: 21 },
+//   { name: "kausi", age: 21 },
+// ];
+
+// const updatedUsers = users.map((user) => {
+//   return {
+//     name: user.name,
+//     age: user.age + 1,
+//   };
+// });
+// console.log(updatedUsers);
+
+const words = ["apple", "orange", "cherry", "plum"];
+const wordStats = words.map(function (currentValue, index, array) {
+  return {
+    word: currentValue,
+    length: currentValue.length,
+    position: index,
+    totalWords: array.length,
+  };
+});
+console.log(wordStats);

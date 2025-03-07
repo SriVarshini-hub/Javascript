@@ -1,7 +1,7 @@
-const number = [1, 2, 3, 4, 5];
-// number.forEach((value) => {
-//   console.log(value);
-// });
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((number) => {
+  console.log(number);
+});
 
 // number.forEach((value, index) => {
 //   console.log("index:" + index + " " + "value=" + value);
