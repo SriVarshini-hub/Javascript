@@ -1,9 +1,10 @@
 // math function:
-let c;
+let ccccccccc;
 c = Math.PI;
-c = Math.round(5.8);
-c = Math.floor(4.3);
-c = Math.ceil(5.3); //
+ccccccccc = Math.round(5.3);
+ccccccccc1 = Math.floor(3.9);
+cccc = Math.ceil(5.1); //
+
 c = Math.sqrt(90);
 c = Math.abs(-50);
 c = Math.trunc(25.8);
@@ -19,4 +20,4 @@ c = Math.log10(45);
 c = Math.sin(45);
 c = Math.log(c);
 
-console.log(c);
+console.log(ccccccccc);
