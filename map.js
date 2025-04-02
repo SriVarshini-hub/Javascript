@@ -6,11 +6,11 @@
 // console.table(sqrt);
 
 // const users = [
-//   { fullname: "Sri Varshini", age: 21, city: "tanjore", salary: "5.5lpa" },
-//   { fullname: "Kaushik", age: 21, city: "Trichy", salary: "5.5lpa" },
-//   { fullname: "Roshini", age: 14, city: "chennai", salary: "5.5lpa" },
-//   { fullname: "Jishnu", age: 21, city: "chennai", salary: "5.5lpa" },
-//   { fullname: "Moni", age: 21, city: "tanjore", salary: "5.5lpa" },
+//   { name: "Sri Varshini", age: 21, city: "tanjore", salary: "5.5lpa" },
+//   { name: "Kaushik", age: 21, city: "Trichy", salary: "5.5lpa" },
+//   { name: "Roshini", age: 14, city: "chennai", salary: "5.5lpa" },
+//   { name: "Jishnu", age: 21, city: "chennai", salary: "5.5lpa" },
+//   { name: "Moni", age: 21, city: "tanjore", salary: "5.5lpa" },
 // ];
 
 // console.table(users);
@@ -46,37 +46,33 @@
 // const evenNumbers = numbers.map((num) => num % 2 === 0);
 // console.log(evenNumbers);
 
-// // 5. Extracting properties from an array of objects:
+// 5. Extracting properties from an array of objects:
 // const users = [
-//   { name: "sri", age: 21 },
-//   { name: "moni", age: 21 },
-//   { name: "kausi", age: 21 },
+//   { name: "Sri Varshini", age: 21 },
+//   { name: "Kaushik", age: 21 },
+//   { name: "Roshini", age: 14 },
+//   { name: "Jishnu", age: 21 },
+//   { name: "Moni", age: 21 },
 // ];
+
 // const names = users.map((user) => {
 //   return user.name;
 // });
 // console.log(names);
 
-// // 6. modifying an array of objects:
-// const users = [
-//   { name: "sri", age: 21 },
-//   { name: "moni", age: 21 },
-//   { name: "kausi", age: 21 },
-// ];
-
-// const updatedUsers = users.map((user) => {
-//   return {
-//     name: user.name,
-//     age: user.age + 1,
-//   };
-// });
+// // 6. Modifying an Array of Object:
+// const updatedUsers = users.map((user) => ({
+//   name: user.name,
+//   age: user.age + 1,
+// }));
 // console.log(updatedUsers);
 
-const words = ["apple", "orange", "cherry", "plum"];
+//Example:
+const words = ["apple", "orange", "bannana"];
 const wordStats = words.map(function (currentValue, index, array) {
   return {
     word: currentValue,
-    length: currentValue.length,
+    lenght: currentValue.length,
     position: index,
     totalWords: array.length,
   };
